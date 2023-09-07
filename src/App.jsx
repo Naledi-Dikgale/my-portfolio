@@ -20,11 +20,11 @@ function App() {
         <section className="w-full h-full flex items-center justify-center">
         <Hero />
         </section>
-        <section id="about" className="w-fit h-fit flex items-center justify-center">
-          <About />
-        </section>
         <section id="projects" className="w-full p-6 h-fit flex">
         <Projects />
+        </section>
+        <section id="about" className="w-fit h-fit flex items-center justify-center">
+          <About />
         </section>
         <section className="w-full flex justify-center items-center">
           <Contact />
