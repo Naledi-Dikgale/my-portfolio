@@ -3,7 +3,7 @@ export const projects = [
     imageURL: "images/todolist.png",
     name: "Wine Tasting Party Invitation",
     description:
-      "A Wine Tasting Party invitation is a two page website created with JavaScript and Tailwind that showcases different wines. ",
+      "A Wine Tasting Party invitation is a two page website providing details about an extravagant wine tasting event. ",
     tech: ["html", "css", "javascript"],
     projectURL: "https://naledi-dikgale.github.io/capstone1-project/",
     projectSrc: "https://github.com/Naledi-Dikgale/capstone1-project.git",
@@ -14,17 +14,35 @@ export const projects = [
     description:
       "This Todo-list app was created using JavaScript, Items can be added, edited, stored and deleted from the list.",
     tech: ["html", "css", "javascript"],
-    projectURL: "https://naledi-dikgale.github.io/todo-list/",
+    projectURL: "https://naledi-dikgale.github.io/todo-list/dist/",
     projectSrc: "https://github.com/Naledi-Dikgale/react-todo.git",
   },
   {
     imageURL: "images/todolist.png",
-    name: "Awesome Books",
+    name: "Wine Tasting Party Invitation",
     description:
-      "Awesome Books App displays current date and time. It is built with JavaScript, users can add, edit, save and delete books from the list.",
+      "A Wine Tasting Party invitation is a two page website providing details about an extravagant wine tasting event. ",
     tech: ["html", "css", "javascript"],
-    projectURL: "https://github.com/Naledi-Dikgale/",
-    projectSrc: "https://github.com/Naledi-Dikgale/bookstore-setup.git",
+    projectURL: "https://naledi-dikgale.github.io/capstone1-project/",
+    projectSrc: "https://github.com/Naledi-Dikgale/capstone1-project.git",
+  },
+  {
+    imageURL: "images/todolist.png",
+    name: "Expense Tracker",
+    description:
+      "A web application that allows users to track and manage their expenses. It also groups expenses according to their different categories.",
+    tech: ["html", "css", "javascript", "Rails"],
+    projectURL: "https://expense-tracker-frvr.onrender.com/",
+    projectSrc: "https://github.com/Naledi-Dikgale/ror-budgetapp",
+  },
+  {
+    imageURL: "images/todolist.png",
+    name: "Console Hub",
+    description:
+      "An app for Gaming consoles rental. It provides users with amazing experience and interface.",
+    tech: ["Ruby", "Rails", "React","Tailwind"],
+    projectURL: "https://consolehub.netlify.app/",
+    projectSrc: "https://github.com/stephenkati/gaming_console_reservation_front_end",
   },
   {
     imageURL: "images/todolist.png",
@@ -32,7 +50,7 @@ export const projects = [
     description:
       "This is an application that displays a list of businesses and allows the user to filter and search for details of the business.",
     tech: ["HTML", "CSS", "JavaScript", "React"],
-    projectURL: "https://github.com/Naledi-Dikgale/",
+    projectURL: "https://stock-market-2xyl.onrender.com",
     projectSrc: "https://github.com/Naledi-Dikgale/react-capstone.git",
   },
 ];
