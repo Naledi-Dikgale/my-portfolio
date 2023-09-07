@@ -1,0 +1,53 @@
+import React, { useEffect, useState } from "react";
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { list } from "postcss";
+const Navbar = () => {
+  let [toggle, setToggle] = useState(false);
+
+  const toggleHandler = () => {
+    const navlist = document.getElementById("navlist");
+    navlist.classList.toggle("max-sm:hidden");
+    setToggle(!toggle);
+  };
+  return (
+    <nav
+      id="nav"
+      className="bg-primary transition-all w-full z-10 border-y-2 border-t-0 border-secondary p-3 flex justify-end items-end max-sm:flex-col max-sm:fixed max-sm:right-0 max-sm:top-0"
+    >
+      {
+      !toggle ? (
+        <FontAwesomeIcon
+          icon={faBars}
+          className={`max-sm:right-0 md:hidden ${
+            toggle ? " max-sm:hidden" : ""
+          }`}
+          onClick={toggleHandler}
+        />
+      ) : (
+        <FontAwesomeIcon
+          icon={faClose}
+          className={`max-sm:right-0 md:hidden ${
+            toggle ? "" : " max-sm:hidden"
+          }`}
+          onClick={toggleHandler}
+        />
+      )}
+
+      <ul id="navlist" className="w-full z-50 flex gap-4 justify-end right-0 max-sm:hidden max-sm:flex-col max-sm:justify-start max-sm:py-24 max-sm:items-center max-sm:bg-primary max-sm:h-screen max-sm:w-full transition-all">
+        <li className="text-2xl cursor-pointer hover:-translate-y-1 hover:underline transition-all " onClick={toggleHandler}>
+          {" "}
+          <a href="#about">About</a>
+        </li>
+        <li className="text-2xl cursor-pointer hover:-translate-y-1 hover:underline transition-all " onClick={toggleHandler}>
+          <a href="#projects">Projects</a>
+        </li>
+        <li className="text-2xl cursor-pointer hover:-translate-y-1 hover:underline transition-all " onClick={toggleHandler}>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  );
+};
+
+export default Navbar;
