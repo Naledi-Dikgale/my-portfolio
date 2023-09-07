@@ -1,14 +1,37 @@
-import { useState } from 'react'
-import './App.css'
+import { useEffect, useState } from "react";
+import About from "./components/About";
+import Navbar from "./components/navigation/Navbar";
+import Contact from "./components/Contact";
+import Projects from "./components/Projects";
+import Hero from "./components/Hero";
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-      <div>
-        <h1 className="text-3xl font-bold underline text-center">Hello world!</h1>
-      </div>
-  )
+    <div
+      id="app"
+      className="m-0 p-0 transition-all scroll-smooth h-full flex flex-col items-center justify-center bg-primary text-secondary"
+    >
+      <header className="w-full flex items-end">
+        <Navbar />
+      </header>
+      <main className="w-full h-full flex flex-col justify-center items-center p-4">
+        <section className="w-full h-full flex items-center justify-center">
+        <Hero />
+        </section>
+        <section id="about" className="w-fit h-fit flex items-center justify-center">
+          <About />
+        </section>
+        <section id="projects" className="w-full p-6 h-fit flex">
+        <Projects />
+        </section>
+        <section className="w-full flex justify-center items-center">
+          <Contact />
+        </section>
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
