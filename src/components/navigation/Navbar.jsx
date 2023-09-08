@@ -13,13 +13,14 @@ const Navbar = () => {
   return (
     <nav
       id="nav"
-      className="bg-primary transition-all w-full z-10 border-y-2 border-t-0 border-secondary p-3 flex justify-end items-end max-sm:flex-col max-sm:fixed max-sm:right-0 max-sm:top-0"
+      className="bg-primary transition-all w-full z-10 border-y-2 border-t-0 border-secondary p-3 flex justify-end items-end max-sm:flex-col fixed right-0 top-0"
     >
+      <div className="w-1/2 flex justify-start items-center">Naledi</div>
       {
       !toggle ? (
         <FontAwesomeIcon
           icon={faBars}
-          className={`max-sm:right-0 md:hidden ${
+          className={`right-0 sm:hidden ${
             toggle ? " max-sm:hidden" : ""
           }`}
           onClick={toggleHandler}
@@ -27,7 +28,7 @@ const Navbar = () => {
       ) : (
         <FontAwesomeIcon
           icon={faClose}
-          className={`max-sm:right-0 md:hidden ${
+          className={`right-0 sm:hidden ${
             toggle ? "" : " max-sm:hidden"
           }`}
           onClick={toggleHandler}

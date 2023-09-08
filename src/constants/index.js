@@ -1,7 +1,7 @@
 export const projects = [
   {
     imageURL: "images/wine.PNG",
-    name: "Wine Tasting Party Invitation",
+    name: "Wine Tasting Invite",
     description:
       "A Wine Tasting Party invitation is a two page website providing details about an extravagant wine tasting event. ",
     tech: ["html", "css", "javascript"],
