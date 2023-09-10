@@ -4,6 +4,12 @@ import ProjectCard from './cards/ProjectCard';
 import Modal from 'react-modal'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClose } from '@fortawesome/free-solid-svg-icons';
+import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/bundle'
+import 'swiper/css';
+import 'swiper/css/navigation'
+
 const Projects = () => {
   let [open, setOpen] = useState(false)
   let [close, setClose] = useState(false)
@@ -18,15 +24,41 @@ const Projects = () => {
     setOpen(false)
     return true
   }
+
+  const responsive = {
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+    }
+  }
+
   return (
-    <div id="projects" className="w-full p-6 h-fit flex flex-col justify-center items-center">
+    <Swiper id="projects" className="w-full p-6 h-fit flex flex-col justify-center items-center"
+    modules={[Navigation]}
+    navigation
+    spaceBetween={50}
+    breakpoints={responsive.breakpoints}
+    >
+        
+        
     <h2 className="text-4xl font-bold text-center underline underline-offset-4 my-5">Projects</h2>
-      <div className="w-full h-max flex gap-5 h-max flex-wrap  items-center justify-center">
-      {projects.map((project, index) => {
-          return <div onClick={() => handleClick( <ProjectCard project={project} />)} key={index} className="h-max w-max flex items-center justify-center border-slate-200"> <ProjectCard project={project} /></div>;
-        })}
-    </div>
-    <Modal
+        <div className="w-full h-max flex gap-5 h-max flex-wrap  items-center justify-center">
+          {projects.map((project, index) => {
+              return <SwiperSlide onClick={() => handleClick( <ProjectCard project={project} />)} key={index} className="h-max w-max flex items-center justify-center border-slate-200 "> <ProjectCard project={project} /></SwiperSlide>;
+            })}
+        </div>
+        
+      <Modal
        isOpen = {open}
        onRequestClose={close}
          shouldCloseOnOverlayClick={true}
@@ -40,9 +72,21 @@ const Projects = () => {
           card
         }
       </div>
-    </Modal>
-  </div>
+      </Modal>
+    </Swiper>
   )
 }
 
 export default Projects
+
+{/* <Swiper className="w-full h-max flex flex-wrap justify-center items-center"
+            spaceBetween={50}
+            slidesPerView={2}
+            // onSlideChange={() => console.log('slide change')}
+            // onSwiper={(swiper) => console.log(swiper)}
+          >
+            <SwiperSlide>slide1</SwiperSlide>
+            <SwiperSlide>slide2</SwiperSlide>
+            <SwiperSlide>slide3</SwiperSlide>
+      
+        </Swiper> */}
