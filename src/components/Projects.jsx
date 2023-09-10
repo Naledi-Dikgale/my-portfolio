@@ -29,15 +29,15 @@ const Projects = () => {
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 10
+        spaceBetween: 5
       },
       480: {
         slidesPerView: 1,
-        spaceBetween: 20
+        spaceBetween: 10
       },
       768: {
         slidesPerView: 3,
-        spaceBetween: 30
+        spaceBetween: 20
       },
     }
   }
@@ -46,11 +46,9 @@ const Projects = () => {
     <Swiper id="projects" className="w-full p-6 h-fit flex flex-col justify-center items-center"
     modules={[Navigation]}
     navigation
-    spaceBetween={50}
+    // spaceBetween={50}
     breakpoints={responsive.breakpoints}
     >
-        
-        
     <h2 className="text-4xl font-bold text-center underline underline-offset-4 my-5">Projects</h2>
         <div className="w-full h-max flex gap-5 h-max flex-wrap  items-center justify-center">
           {projects.map((project, index) => {

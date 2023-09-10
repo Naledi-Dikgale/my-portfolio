@@ -6,7 +6,7 @@ const ProjectCard = (project) => {
   const prj = { ...project };
 
   return (
-    <div className="h-fit w-fit max-sm:w-full md:w-64 lg:w-full border  border-secondary text-secondary rounded-lg p-3 flex flex-col justify-center items-center hover:border-2 hover:border-white transition-transform  ">
+    <div className="h-fit w-fit max-sm:w-full md:w-64 lg:w-full border  border-secondary text-secondary rounded-lg p-3 flex flex-col justify-center items-center hover:border-2 hover:border-white transition-transform max-w-xs  ">
       <div className="flex flex-col items-center justify-center">
         <img className="object-contain md:w-60 md:h-44 lg:w-64 lg:h-48 my-2" src={prj.project.imageURL} alt={prj.project.title} />
         <h3 className="text-xl max-sm:text-lg font-bold underline underline-offset-4 text-center py-3">
