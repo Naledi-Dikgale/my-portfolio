@@ -34,7 +34,7 @@ export const projects = [
     name: "Expense Tracker",
     description:
       "A web application that allows users to track and manage their expenses. It also groups expenses according to their different categories.",
-    tech: ["html", "css", "javascript", "Rails"],
+    tech: ["React", "javascript", "Rails"],
     projectURL: "https://expense-tracker-frvr.onrender.com/",
     projectSrc: "https://github.com/Naledi-Dikgale/ror-budgetapp",
   },
@@ -44,7 +44,7 @@ export const projects = [
     name: "Console Hub",
     description:
       "An app for Gaming consoles rental. It provides users with amazing experience and interface.",
-    tech: ["Ruby", "Rails", "React","Tailwind"],
+    tech: ["Rails", "React","Tailwind"],
     projectURL: "https://consolehub.netlify.app/",
     projectSrc: "https://github.com/stephenkati/gaming_console_reservation_front_end",
   },
@@ -54,7 +54,7 @@ export const projects = [
     name: "Stock Market App",
     description:
       "This is an application that displays a list of businesses and allows the user to filter and search for details of the business.",
-    tech: ["HTML", "CSS", "JavaScript", "React"],
+    tech: ["CSS", "JavaScript", "React"],
     projectURL: "https://stock-market-2xyl.onrender.com",
     projectSrc: "https://github.com/Naledi-Dikgale/react-capstone.git",
   },

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import Socials from "./Socials";
 import emailjs from "@emailjs/browser";
 import { ScaleLoader } from "react-spinners";
@@ -36,7 +36,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="flex gap-5 max-sm:gap-2 justify-around max-sm:justify-start items-center max-sm:w-full md:w-2/3 border border-secondary rounded p-10 max-sm:p-3"
+      className="flex gap-5 max-sm:gap-2 justify-around max-sm:justify-start items-center max-sm:w-full md:w-2/3 border border-secondary rounded p-10 max-sm:p-3 mt-10"
     >
       <Socials flex="flex-col" />
       <form
