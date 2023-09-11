@@ -25,6 +25,7 @@
     "react-modal": "^3.16.1",
     "react-responsive-carousel": "^3.2.23",
     "react-spinners": "^0.13.8",
+    "react-typed": "^1.2.0",
     "swiper": "^10.2.0",
     "three": "^0.155.0"
   },
