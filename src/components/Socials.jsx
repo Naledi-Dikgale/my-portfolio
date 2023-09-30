@@ -15,7 +15,7 @@ const Socials = (flex) => {
     <div className={`flex gap-5 ` + flex.flex}>
         {
             socials.map((element, index) => {
-                return <a href={element.url} key={index} className='hover:text-secondary  text-dimBlue' target='_blank' rel='noreferrer'>
+                return <a href={element.url} key={index} className='hover:text-lime-500  text-neutral-600' target='_blank' rel='noreferrer'>
                         <FontAwesomeIcon icon={element.icon} className='md:w-8 md:h-8 max-sm:w-6 max-sm:h-6 hover:-translate-y-1 transition-transform' />
                     </a>
 
