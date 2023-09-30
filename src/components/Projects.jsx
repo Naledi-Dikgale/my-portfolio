@@ -48,8 +48,8 @@ const Projects = () => {
     <div className="w-full h-full z-0">
 
       <div className="w-full h-full">
-        <h2 className="text-4xl font-bold text-center underline underline-offset-4 my-5">
-              Projects
+        <h2 className="text-4xl font-bold text-center underline text-indigo-950 underline-offset-4 my-5">
+              My Work
         </h2>
             <div className="w-full h-max flex gap-5 flex-wrap  items-center justify-center">
               <Swiper
