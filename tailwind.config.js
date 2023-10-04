@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#e0f2fe",
-        secondary: "#2563eb",
+        primary: "#030712",
+        secondary: "#047857",
         dimWhite: "#171717",
         dimBlue: "#ccd6f6",
         green: "#caefc1"
@@ -17,7 +17,7 @@ export default {
         poppins: ["Poppins", "sans-serif"],
       },
       backgroundImage: {
-        hero: "url('/images/herobg.svg')"
+        hero: "url('/images/universe.png')"
       }
     },
     // screens: {
