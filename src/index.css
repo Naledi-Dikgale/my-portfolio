@@ -1,9 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* :root {
-
-} */
+:root {
+  --swiper-navigation-size: 27px;
+}
 html{
   scroll-behavior: smooth;
   margin: 0;
@@ -21,3 +21,17 @@ body {
   scroll-behavior: smooth;
 }
 
+.swiper-button-next {
+    color: #047857;
+    padding: 35px 5px;
+    position: absolute;
+    right: 0;
+    
+}
+
+.swiper-button-prev {
+  color: #047857;
+  padding: 35px 5px;
+  position: absolute;
+  left: 0;  
+}

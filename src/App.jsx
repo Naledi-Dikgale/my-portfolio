@@ -16,7 +16,7 @@ function App() {
         <Navbar />
       </header>
       <main className="w-full h-full flex flex-col justify-center items-center p-4">
-        <section className="w-full h-full flex items-center justify-center">
+        <section className="w-full h-full flex items-center justify-center  bg-hero bg-no-repeat bg-cover bg-center">
         <Hero />
         </section>
         <section id="projects" className="w-full p-6 h-fit flex">

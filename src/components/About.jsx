@@ -8,8 +8,8 @@ const About = () => {
       <div className="flex flex-col max-sm:w-full text-justify md:w-2/3 items-start justify-center  p-10 rounded-lg">
         <div className="flex w-full gap-5 max-sm:flex-col">
           <div className="w-full">
-            <span className="text-indigo-950 font-mono font-bold text-3xl">About Me</span>
-            <p className="text-indigo-950 w-full py-3 font-medium">
+            <span className="text-red-700 font-mono font-bold text-3xl">About Me</span>
+            <p className="text-neutral-50 w-full py-3 font-medium">
               Crafting digital dreams with code! As a full-stack developer, I&apos;m
               your one-stop destination for turning ideas into pixel-perfect
               reality. With a toolbox filled with HTML, CSS, JavaScript, React,
@@ -20,13 +20,13 @@ const About = () => {
           </div>
 
           <div className="max-sm:w-full md:w-full h-full">
-            <span className="text-indigo-950 font-mono font-bold text-3xl">Skills</span>
+            <span className="text-red-700 font-mono font-bold text-3xl">Skills</span>
             <div className="grid grid-rows-4 grid-cols-2 grid-flow-col w-full py-3 h-full">
               {skills.map((element, index) => {
                 return (
                   <div key={index} className="flex gap-2 items-center w-full p-3">
                     <img src={element.icon} alt="" className="w-10 h-10" />
-                    <span className="text-indigo-950">{element.name}</span>
+                    <span className="text-neutral-50">{element.name}</span>
                   </div>
                 );
               })}
@@ -35,11 +35,11 @@ const About = () => {
         </div>
         <button
               type="button"
-              className="transition-all my-3  w-full h-16 text-primary bg-lime-500 hover:bg-secondary hover:text-primary"
+              className="transition-all my-3  w-full h-16 text-neutral-50 bg-secondary rounded-xl hover:bg-red-700 hover:text-neutral-50"
             >
               <a
                 href="#contact"
-                className="w-38 h-18 px-6 py-4 rounded-lg border-2 border-transparent text-lg font-mono font-extrabold hover:border-primary text-center transition-all"
+                className="w-38 h-18 px-6 py-4 rounded-lg border-2 border-transparent text-lg font-mono font-extrabold text-center transition-all"
               >
                 Contact Me
               </a>
