@@ -45,20 +45,20 @@ const Contact = () => {
         method="post"
         className="flex flex-col gap-4 w-11/12 md:w-2/3"
       >
-        <span className="text-4xl font-mono text-indigo-950">Contact Me</span>
+        <span className="text-4xl font-mono text-red-700">Contact Me</span>
         <input
           type="text"
           name="user_name"
           required
           placeholder="Name"
-          className="p-3 text-dimBlue font-mono border border-secondary"
+          className="p-3 text-dimBlue font-mono border border-secondary rounded"
         />
         <input
           type="email"
           name="user_email"
           required
           placeholder="Email"
-          className="p-3 text-dimBlue font-mono border border-secondary "
+          className="p-3 text-dimBlue font-mono border border-secondary rounded "
         />
         <textarea
           name="message"
@@ -67,11 +67,11 @@ const Contact = () => {
           rows="6"
           required
           placeholder="Message"
-          className="p-3 text-dimBlue font-mono border border-secondary"
+          className="p-3 text-dimBlue font-mono border border-secondary rounded"
         ></textarea>
         <button
           type="submit"
-          className="bg-lime-500 text-primary p-4 font-bold font-mono text-xl hover:bg-secondary hover:text-primary"
+          className="bg-secondary text-neutral-50 p-4 font-bold font-mono text-xl hover:bg-red-700 hover:text-neutral-50 rounded"
         >
           {loading ? <ScaleLoader /> : "Send"}
         </button>
