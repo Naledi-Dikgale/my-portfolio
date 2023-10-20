@@ -16,9 +16,9 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
-      backgroundImage: {
-        hero: "url('/images/universe.png')"
-      }
+      // backgroundImage: {
+      //   hero: "url('/images/universe.png')"
+      // }
     },
     // screens: {
     //   xs: "480px",
