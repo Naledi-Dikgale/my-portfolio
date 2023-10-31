@@ -33,7 +33,7 @@ const Hero = () => {
               I am a <br /> <span ref={el} />
           </p>
         </div>
-        <p className="w-full py-5 font-mono text-xl  text-justify text-neutral-50 grow font-texturina ">
+        <p className="w-full py-5 text-xl  text-justify text-neutral-50 grow font-texturina ">
             I can help you build a product, feature or website. Look through some
             of my work and experience! If you like what you see and have a project
             you need coded, don&apos;t hesitate to contact me.
