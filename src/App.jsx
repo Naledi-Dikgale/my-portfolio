@@ -3,6 +3,7 @@ import Navbar from "./components/navigation/Navbar";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -27,6 +28,9 @@ function App() {
         </section>
         <section className="w-full flex justify-center items-center">
           <Contact />
+        </section>
+        <section className="w-full flex justify-center items-center">
+          <Footer />
         </section>
       </main>
     </div>
