@@ -10,13 +10,13 @@ function App() {
   return (
     <div
       id="app"
-      className="m-0 p-0 transition-all scroll-smooth h-full flex flex-col items-center justify-center bg-primary text-secondary"
+      className="m-0 p-0 transition-all scroll-smooth h-full flex flex-col items-center justify-center bg-gradient-to-r from-gray-950 from-10% via-slate-900 via-30% to-slate-800 to-90% text-secondary"
     >
       <header className="w-full flex items-end">
         <Navbar />
       </header>
       <main className="w-full h-full flex flex-col justify-center items-center p-4">
-        <section className="w-full h-full flex items-center justify-center  bg-hero bg-no-repeat bg-cover bg-center">
+        <section className="w-full h-full flex items-center justify-center  bg-hero bg-no-repeat bg-cover bg-center ">
         <Hero />
         </section>
         <section id="projects" className="w-full p-6 h-fit flex">
