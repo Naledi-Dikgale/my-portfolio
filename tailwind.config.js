@@ -15,6 +15,9 @@ export default {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
+        agbalumo: ["Black Ops One", "cursive", "sans-serif"],
+        lobster: ["Lobster Two", "sans-serif"],
+        texturina: ["Texturina", "serif"]
       },
       // backgroundImage: {
       //   hero: "url('/images/universe.png')"
