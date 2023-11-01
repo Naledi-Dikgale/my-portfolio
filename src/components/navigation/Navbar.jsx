@@ -14,7 +14,7 @@ const Navbar = () => {
       id="nav"
       className="bg-secondary text-neutral-50 transition-all w-full z-10 p-3 flex justify-end items-end fixed right-0 top-0 h-16"
     >
-      <div className="w-full flex justify-start items-center font-lobster text-2xl ">Naledi</div>
+      <div className="w-full flex justify-start items-center font-lobster text-2xl cursor-pointer hover:-translate-y-1 hover:underline transition-all ">Naledi</div>
       {
       !toggle ? (
         <FontAwesomeIcon
