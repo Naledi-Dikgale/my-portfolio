@@ -9,7 +9,7 @@ const ProjectCard = (project) => {
     <div className="h-fit w-fit max-sm:w-full md:w-64 lg:w-full border text-primary p-3 flex flex-col justify-center items-center border border-3 border-secondary rounded hover:border-2 hover:border-secondary transition-transform max-w-xs bg-primay ">
       <div className="flex flex-col items-center justify-center">
         <img className="object-contain md:w-60 md:h-44 lg:w-64 lg:h-48 my-2" src={prj.project.imageURL} alt={prj.project.title} />
-        <h3 className="text-xl max-sm:text-lg font-bold underline underline-offset-4 text-center py-3">
+        <h3 className="text-2xl font-texturina text-pink-700 font-bold text-pink-700 underline underline-offset-4 text-center py-3">
           {prj.project.name}
         </h3>
         <p className="lg:h-34 md:h-32 md:w-56 text-dimBlue text-justify">{prj.project.description}</p>
@@ -20,7 +20,7 @@ const ProjectCard = (project) => {
             return (
               <div
                 className={
-                  `py-1 px-2 box-border rounded bg-secondary text-primary w-full hover:bg-red-700 hover:text-neutral-50 hover:cursor-pointer ` +
+                  `py-1 px-2 box-border rounded bg-secondary text-primary w-full hover:bg-pink-700 hover:text-neutral-50 hover:cursor-pointer ` +
                   `md: w-max grid grid-cols-${prj.project.tech.length}`
                 }
                 key={index}
@@ -34,10 +34,10 @@ const ProjectCard = (project) => {
         </div>
         <div className="w-5/6 py-3 flex justify-between">
           <a href={prj.project.projectSrc} target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={faGithub}  className="h-6 w-6 hover:text-red-700 text-orange-700 transition-transform hover:-translate-y-1"/>
+            <FontAwesomeIcon icon={faGithub}  className="h-6 w-6 hover:text-pink-700 text-secondary transition-transform hover:-translate-y-1"/>
           </a>
           <a href={prj.project.projectURL} target="_blank" rel="noreferrer">
-            <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="h-6 w-6 hover:text-red-700 text-orange-700 transition-transform hover:-translate-y-1" />
+            <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="h-6 w-6 hover:text-pink-700 text-secondary transition-transform hover:-translate-y-1" />
           </a>
         </div>
       </div>
