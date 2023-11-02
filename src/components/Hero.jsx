@@ -17,15 +17,8 @@ const Hero = () => {
   };
 }, []);
 
-// const heroStyle = {
-//   backgroundImage: `url(${backgroundImage})`,
-//   backgroundSize: 'cover',
-//   backgroundPosition: 'center',
-//   backgroundRepeat: 'no-repeat',
-// };
-
   return (
-    <div className="w-11/12 h-screen p-5 mb-8 flex-col items-start justify-start flex border-secondary shadow-[0_60px_50px_-40px_rgba(0,128,128,0.3)] ">
+    <div className="w-11/12 h-5/6 p-5 mb-8 flex-col items-start justify-start flex border-secondary shadow-[0_60px_50px_-40px_rgba(0,128,128,0.3)] ">
       <div className="w-2/3 max-sm:w-full  text-pink-700 md:w-full lg:w-2/3 p-5 flex flex-col items-center grow font-agbalumo">
         <div className="h-fit w-full mt-16">
           <p className="text-4xl md:text-4xl font-bold max-sm:text-3xl w-fit">
