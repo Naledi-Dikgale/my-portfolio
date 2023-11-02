@@ -25,16 +25,36 @@ body {
 }
 
 .swiper-button-next {
-    color: #047857;
+    color: #eef5f3;
     padding: 35px 5px;
     position: absolute;
     right: 0;
-    
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: #047857;
+    padding: 20px;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
 }
 
+.swiper-button-next:hover {
+  background-color: #be185d;
+  transform: translateY(-1px);
+}
+
+
 .swiper-button-prev {
-  color: #047857;
+  color: #eef5f3;
   padding: 35px 5px;
   position: absolute;
-  left: 0;  
+  left: 0; 
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: #047857;
+  padding: 20px; 
+  transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.swiper-button-prev:hover {
+  background-color: #be185d;
+  transform: translateY(-1px);
 }
