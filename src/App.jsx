@@ -16,11 +16,11 @@ function App() {
       <header className="w-full flex items-end">
         <Navbar />
       </header>
-      <main className="w-full h-full flex flex-col justify-center items-center p-4">
+      <main className="w-full h-full flex flex-col justify-center items-center p-0">
         <section className="w-full h-full flex items-center justify-center  bg-hero bg-no-repeat bg-cover bg-center ">
         <Hero />
         </section>
-        <section id="projects" className="w-full p-6 h-fit flex">
+        <section id="projects" className="w-full p-0 h-fit flex">
         <Projects />
         </section>
         <section id="about" className="w-fit h-fit flex items-center justify-center">

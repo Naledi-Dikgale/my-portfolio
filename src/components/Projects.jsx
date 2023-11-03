@@ -48,7 +48,7 @@ const Projects = () => {
     <div className="w-full h-full z-0 shadow-[0_60px_50px_-40px_rgba(0,128,128,0.3)] ">
 
       <div className="w-full h-full">
-        <h2 className="text-4xl font-bold text-center text-pink-700 underline-offset-4 my-5 font-agbalumo ">
+        <h2 className="text-4xl text-center text-pink-400 underline-offset-4 my-5 font-agbalumo font-bold ">
               My Work
         </h2>
             <div className="w-full h-max flex gap-5 flex-wrap  items-center justify-center">
