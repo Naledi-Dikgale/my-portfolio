@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Texturina:opsz,wght@12..72,100&display=swap');
 @tailwind base;
@@ -37,7 +37,7 @@ body {
 }
 
 .swiper-button-next:hover {
-  background-color: #be185d;
+  background-color: #f472b6;
   transform: translateY(-1px);
 }
 
@@ -55,6 +55,6 @@ body {
 }
 
 .swiper-button-prev:hover {
-  background-color: #be185d;
+  background-color: #f472b6;
   transform: translateY(-1px);
 }
