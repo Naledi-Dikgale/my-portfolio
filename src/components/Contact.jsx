@@ -45,7 +45,7 @@ const Contact = () => {
         method="post"
         className="flex flex-col gap-4 w-11/12 md:w-2/3"
       >
-        <span className="text-4xl text-pink-700 font-agbalumo ">Contact Me</span>
+        <span className="text-4xl text-pink-400 font-agbalumo font-bold ">Contact Me</span>
         <input
           type="text"
           name="user_name"
@@ -71,7 +71,7 @@ const Contact = () => {
         ></textarea>
         <button
           type="submit"
-          className="bg-secondary text-neutral-50 p-4 font-lobster text-3xl hover:bg-pink-700 hover:text-neutral-50 rounded "
+          className="bg-secondary text-neutral-50 p-4 font-lobster text-3xl hover:bg-pink-400 hover:text-neutral-50 rounded "
         >
           {loading ? <ScaleLoader /> : "Send"}
         </button>
