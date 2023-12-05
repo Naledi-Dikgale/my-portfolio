@@ -4,7 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-
+darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -12,7 +12,9 @@ export default {
         secondary: "#047857",
         dimWhite: "#171717",
         dimBlue: "#ccd6f6",
-        green: "#caefc1"
+        green: "#caefc1",
+        primaryLight: "#0d1117",
+        secondaryLight: "#0d1117",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
